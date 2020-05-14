@@ -32,10 +32,22 @@ public class Main {
 
 	}
 
+	public static List<Rental> loadRentals() {
+		List<Rental> rentals = new ArrayList<Rental>();
+		Customer firstCustomer = new Customer(1, "Greys", "Espinoza", "95456", "234 Brown st", "");
+		DVD firstDvd = new DVD(1, "Parasite", "2020", "Drama", 7, 6.0);
+		Rental rental = new Rental(1, firstCustomer, firstDvd, " 5/20/2020", "10/20/2020", 5.0);
+
+		rentals.add(rental);
+
+		return rentals;    
+	}
+
 	public static void main(String[] args) {
 
 		loadDvds();
 		loadCustomer();
+		loadRentals();
 
 	}
 

@@ -9,7 +9,7 @@ public class Rental {
 	private String dateReturned;
 	private Double amoutDue;
 
-	private Rental(int id, Customer customer, DVD dvd, String dateOut, String dateReturned, Double amoutDue) {
+	public Rental(int id, Customer customer, DVD dvd, String dateOut, String dateReturned, Double amoutDue) {
 		
 		this.id = id;
 		this.customer = customer;
