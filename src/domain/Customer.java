@@ -82,7 +82,7 @@ public class Customer {
 
 	public String getInfo() {
 		return "Id customer: " + getId() + "\n" + "Name: " + getFirstName() + "\n" + "Lastname: " + getLastName() + "\n"
-				+ "Phone: " + getPhone() + "\n" + "Address" + getAddress() + "\n" + "Email: " + getEmail() + "\n";
+				+ "Phone: " + getPhone() + "\n" + "Address: " + getAddress() + "\n" + "Email: " + getEmail() + "\n";
 
 	}
 }

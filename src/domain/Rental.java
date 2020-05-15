@@ -8,16 +8,16 @@ public class Rental {
 	private DVD dvd;
 	private String dateOut;
 	private String dateReturned;
-	private Double amoutDue;
+	private Double amountDue;
 
-	public Rental(int id, Customer customer, DVD dvd, String dateOut, String dateReturned, Double amoutDue) {
+	public Rental(int id, Customer customer, DVD dvd, String dateOut, String dateReturned, Double amountDue) {
 
 		this.id = id;
 		this.customer = customer;
 		this.dvd = dvd;
 		this.dateOut = dateOut;
 		this.dateReturned = dateReturned;
-		this.amoutDue = amoutDue;
+		this.amountDue = amountDue;
 	}
 	
 	//Returns
@@ -72,20 +72,20 @@ public class Rental {
 	}
 
 	//Returns Amount due
-	public Double getAmoutDue() {
-		return amoutDue;
+	public Double getAmountDue() {
+		return amountDue;
 	}
 
 	// set amount due
-	public void setAmoutDue(Double amoutDue) {
-		this.amoutDue = amoutDue;
+	public void setAmountDue(Double amountDue) {
+		this.amountDue = amountDue;
 	}
  
 	//Returns
 	public String getInfo() {
-		return "Costumer ID: " + getId() + "\n" + "First Customer: " + getCustomer() + "\n" + "First DVD: " + getDvd()
+		return "Costumer ID: " + getId() + "\n" + "First Customer: " + getCustomer().getInfo() + "\n" + "First DVD: " + getDvd().getInfo()
 				+ "\n" + "Date of check out: " + getDateOut() + "\n" + "Date of return: " + getDateReturned() + "\n"
-				+ "Amount due: " + getAmoutDue() + "\n";
+				+ "Amount due: " + getAmountDue() + "\n";
 
 	}
 
