@@ -1,7 +1,7 @@
 package domain;
 
 public class DVD {
-
+	// Class declaration
 	private int id;
 	private String title;
 	private String releaseYear;
@@ -18,50 +18,62 @@ public class DVD {
 		this.rentalPrice = rentalPrice;
 	}
 
+	// Return ID
 	public int getId() {
 		return id;
 	}
 
+	// Set Id
 	public void setId(int id) {
 		this.id = id;
 	}
 
+	// Return title
 	public String getTitle() {
 		return title;
 	}
 
+	// Set Title
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
+	// Return Release Year
 	public String getReleaseYear() {
 		return releaseYear;
 	}
 
+	// Set Release year
 	public void setReleaseYear(String releaseYear) {
 		this.releaseYear = releaseYear;
 	}
 
+	// Return gender
 	public String getGender() {
 		return gender;
 	}
 
+	// Set gender
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
 
+	// Return inStock
 	public int getInStock() {
 		return inStock;
 	}
 
+	// Set inStock
 	public void setInStock(int inStock) {
 		this.inStock = inStock;
 	}
 
+	// Return Rental Price
 	public double getRentalPrice() {
 		return rentalPrice;
 	}
 
+	// Set Rental Price
 	public void setRentalPrice(double rentalPrice) {
 		this.rentalPrice = rentalPrice;
 	}
